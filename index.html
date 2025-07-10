@@ -1,89 +1,90 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Grow a Garden – Roblox Nachbau</title>
+  <title>Grow a Garden - Game Page Clone</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   <style>
-    body { font-family: 'Roboto', sans-serif; background-color: #f2f2f2; }
+    body { font-family: system-ui, sans-serif; }
   </style>
 </head>
-<body>
-
-  <!-- Header mit Games Cover, Titel und Buttons -->
-  <header class="bg-white shadow p-6 flex flex-wrap items-center justify-between">
-    <div class="flex items-center space-x-4">
-      <img src="https://tr.rbxcdn.com/your_game_icon.png" alt="Grow a Garden" class="w-24 h-24 rounded-md" />
-      <div>
-        <h1 class="text-3xl font-bold">Grow a Garden</h1>
-        <p class="text-gray-600">Von Splitting Point Studios</p>
-        <div class="mt-1 text-sm text-gray-500">2 Mio+ Spieler • Meist gespielt</div>
+<body class="bg-gray-100 text-gray-800">
+  <!-- Header -->
+  <header class="bg-white shadow p-6">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <div class="flex items-center space-x-4">
+        <img src="https://via.placeholder.com/100" alt="Game Icon" class="w-24 h-24 rounded-md">
+        <div>
+          <h1 class="text-2xl font-bold">Grow a Garden</h1>
+          <p class="text-sm text-gray-500">By Neutral Studio</p>
+          <p class="text-sm text-gray-400">Updated Jul 2025 | Simulation</p>
+        </div>
       </div>
-    </div>
-    <div class="flex space-x-3 mt-4 md:mt-0">
-      <button class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded">Spielen</button>
-      <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2 rounded">Favorit</button>
-      <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2 rounded">Teilen</button>
+      <div class="space-x-2">
+        <button class="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700">Play</button>
+        <button class="bg-gray-200 px-3 py-2 rounded hover:bg-gray-300">Favorite</button>
+        <button class="bg-gray-200 px-3 py-2 rounded hover:bg-gray-300">Share</button>
+      </div>
     </div>
   </header>
 
-  <!-- Slider / Galerie -->
-  <section class="bg-white my-6 p-4 shadow">
-    <div class="flex overflow-x-scroll space-x-4">
-      <!-- Platzhalter-Screenshots -->
-      <img src="https://tr.rbxcdn.com/screenshot1.png" alt="Screenshot 1" class="w-80 h-48 object-cover rounded" />
-      <img src="https://tr.rbxcdn.com/screenshot2.png" alt="Screenshot 2" class="w-80 h-48 object-cover rounded" />
-      <img src="https://tr.rbxcdn.com/screenshot3.png" alt="Screenshot 3" class="w-80 h-48 object-cover rounded" />
+  <!-- Gallery -->
+  <section class="max-w-6xl mx-auto mt-6">
+    <div class="flex space-x-4 overflow-x-auto px-6">
+      <img src="https://via.placeholder.com/320x180" class="rounded-lg shadow-md">
+      <img src="https://via.placeholder.com/320x180" class="rounded-lg shadow-md">
+      <img src="https://via.placeholder.com/320x180" class="rounded-lg shadow-md">
     </div>
   </section>
 
-  <!-- Game Info-Kacheln -->
-  <section class="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
+  <!-- Stats Cards -->
+  <section class="max-w-6xl mx-auto mt-6 grid grid-cols-2 md:grid-cols-4 gap-4 px-6">
     <div class="bg-white p-4 rounded shadow text-center">
-      <div class="text-xl font-semibold">Genre</div>
-      <div class="text-gray-600">Sim & Abenteuer</div>
+      <div class="text-lg font-semibold">Genre</div>
+      <div class="text-gray-600">Simulation</div>
     </div>
     <div class="bg-white p-4 rounded shadow text-center">
-      <div class="text-xl font-semibold">Läuft seit</div>
-      <div class="text-gray-600">Mai 2025</div>
+      <div class="text-lg font-semibold">Visits</div>
+      <div class="text-gray-600">2M+</div>
     </div>
     <div class="bg-white p-4 rounded shadow text-center">
-      <div class="text-xl font-semibold">Favoriten</div>
-      <div class="text-gray-600">✔️</div>
+      <div class="text-lg font-semibold">Favorites</div>
+      <div class="text-gray-600">150K</div>
     </div>
     <div class="bg-white p-4 rounded shadow text-center">
-      <div class="text-xl font-semibold">Besuche</div>
-      <div class="text-gray-600">+2 Mio</div>
+      <div class="text-lg font-semibold">Created</div>
+      <div class="text-gray-600">May 2025</div>
     </div>
   </section>
 
   <!-- Tabs -->
-  <section class="container mx-auto bg-white my-6 p-4 rounded shadow">
-    <nav class="border-b border-gray-300 mb-4">
-      <ul class="flex space-x-4">
-        <li><a href="#" class="pb-2 text-blue-600 border-b-2 border-blue-600">About</a></li>
-        <li><a href="#" class="pb-2 text-gray-600 hover:text-gray-800">Server</a></li>
-        <li><a href="#" class="pb-2 text-gray-600 hover:text-gray-800">Socials</a></li>
-      </ul>
-    </nav>
-    <div id="tab-about">
-      <p class="text-gray-700">Grow a Garden ist ein beliebtes Roblox-Spiel, in dem du deinen eigenen Garten anbaust...</p>
+  <section class="max-w-6xl mx-auto mt-6 bg-white rounded shadow px-6 py-4">
+    <div class="border-b mb-4">
+      <nav class="flex space-x-6">
+        <a href="#" class="text-blue-600 border-b-2 border-blue-600 pb-2">About</a>
+        <a href="#" class="text-gray-500 hover:text-gray-800 pb-2">Servers</a>
+        <a href="#" class="text-gray-500 hover:text-gray-800 pb-2">Store</a>
+      </nav>
     </div>
-  </section>
-
-  <!-- Private Server Info -->
-  <section class="container mx-auto bg-white my-6 p-6 rounded shadow flex flex-col md:flex-row items-center justify-between">
     <div>
-      <h2 class="text-2xl font-bold">Privater Server</h2>
-      <p class="mt-2 text-gray-700">Nutze diesen Link, um deinem privaten Server beizutreten:</p>
-      <code class="block bg-gray-100 p-2 mt-1 rounded">24285097817523155685561562675102</code>
+      <p class="text-gray-700">Grow your own garden, explore nature, and collect seeds in this relaxing simulation game. Unlock pets and decorate your garden the way you like!</p>
     </div>
-    <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded mt-4 md:mt-0">Server starten</button>
   </section>
 
+  <!-- Private Server -->
+  <section class="max-w-6xl mx-auto mt-6 bg-white rounded shadow px-6 py-4 flex flex-col md:flex-row items-center justify-between">
+    <div class="mb-4 md:mb-0">
+      <h2 class="text-xl font-bold">Private Server</h2>
+      <p class="text-gray-600">Use this code to join a private server:</p>
+      <code class="block bg-gray-100 px-3 py-1 rounded mt-1 text-sm">24285097817523155685561562675102</code>
+    </div>
+    <button class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Join Server</button>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-12 py-6 text-center text-sm text-gray-400">
+    <p>Roblox-inspired demo. Not affiliated with Roblox Corporation.</p>
+  </footer>
 </body>
 </html>
