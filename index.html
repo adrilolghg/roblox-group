@@ -1,86 +1,89 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Roblox Community Nachbau</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <style>
-      body {
-        font-family: 'Roboto', sans-serif;
-      }
-    </style>
-  </head>
-  <body class="bg-[#0d0d0d] text-white">
-    <div class="flex min-h-screen">
-      <!-- Sidebar -->
-      <aside class="w-60 bg-[#1a1a1a] p-4 flex flex-col">
-        <h2 class="text-2xl font-bold mb-4">Adrian</h2>
-        <nav class="space-y-3">
-          <a href="#" class="block text-sm hover:text-gray-400">🏠 Home</a>
-          <a href="#" class="block text-sm hover:text-gray-400">👤 Profile</a>
-          <a href="#" class="block text-sm hover:text-gray-400">💬 Messages <span class="ml-1 bg-red-600 px-1 rounded text-xs">8</span></a>
-          <a href="#" class="block text-sm hover:text-gray-400">👥 Friends <span class="ml-1 text-gray-400">108</span></a>
-          <a href="#" class="block text-sm hover:text-gray-400">🧍 Avatar</a>
-          <a href="#" class="block text-sm hover:text-gray-400">🎒 Inventory</a>
-          <a href="#" class="block text-sm hover:text-gray-400">🔁 Trade</a>
-          <a href="#" class="block text-sm hover:text-gray-400 font-bold">🌐 Communities</a>
-          <a href="#" class="block text-sm hover:text-gray-400">📝 Blog</a>
-          <a href="#" class="block text-sm hover:text-gray-400">🏬 Official Store</a>
-          <a href="#" class="block text-sm hover:text-gray-400">💳 Gift Cards</a>
-          <a href="#" class="block text-sm hover:text-gray-400">⭐ Get Premium</a>
-          <a href="#" class="block text-sm hover:text-gray-400">📅 Events</a>
-        </nav>
-        <div class="mt-4">
-          <img src="https://tr.rbxcdn.com/e26f18495cbeff4556a2b0419c4b6a2e/420/420/Image/Png" alt="The Hatch" class="rounded" />
-        </div>
-      </aside>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grow a Garden – Roblox Nachbau</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Roboto', sans-serif; background-color: #f2f2f2; }
+  </style>
+</head>
+<body>
 
-      <!-- Main Content -->
-      <main class="flex-1 bg-[#121212] p-6">
-        <!-- Header -->
-        <div class="flex justify-between items-center mb-6">
-          <h1 class="text-3xl font-bold">BIG Games™</h1>
-          <button class="bg-gray-800 text-sm px-3 py-1 rounded hover:bg-gray-700">More Communities →</button>
-        </div>
-
-        <!-- Info Box -->
-        <div class="bg-[#1f1f1f] p-6 rounded-lg mb-6">
-          <div class="flex items-center space-x-4">
-            <img src="https://tr.rbxcdn.com/12594aa9b829991303274b9e8cd59c1f/150/150/Image/Png" alt="BIG Games Logo" class="w-20 h-20 rounded" />
-            <div>
-              <p class="text-xl font-semibold">BIG Games™ <span class="text-blue-500">✔</span></p>
-              <p class="text-gray-400">By Preston</p>
-              <p class="mt-1">11M+ Members • 🏆 Fan Rank</p>
-              <p class="text-sm mt-2">We make games! 🍊<br />Thanks for playing...</p>
-            </div>
-          </div>
-
-          <!-- Tabs -->
-          <div class="mt-6 flex space-x-6 text-sm border-b border-gray-700 pb-2">
-            <span class="text-white border-b-2 border-white pb-1">About</span>
-            <span class="text-gray-400 hover:text-white cursor-pointer">Store</span>
-            <span class="text-gray-400 hover:text-white cursor-pointer">Affiliates</span>
-          </div>
-        </div>
-
-        <!-- Announcement -->
-        <div class="bg-[#1f1f1f] rounded-lg p-4">
-          <div class="flex justify-between items-center mb-3">
-            <div>
-              <p class="font-semibold">Get notified when announcements are posted</p>
-              <p class="text-sm text-gray-400">Stay up to date with BIG Games™ by turning on notifications.</p>
-            </div>
-            <button class="bg-[#2e2e2e] px-4 py-1 rounded hover:bg-[#3a3a3a] text-sm">Notify me</button>
-          </div>
-          <div class="mt-4">
-            <img src="https://tr.rbxcdn.com/bcd7428898a1c02b4dbdf2d6f9a11a09/768/432/Image/Png" alt="Bench A Gargantuan" class="w-full rounded" />
-          </div>
-        </div>
-      </main>
+  <!-- Header mit Games Cover, Titel und Buttons -->
+  <header class="bg-white shadow p-6 flex flex-wrap items-center justify-between">
+    <div class="flex items-center space-x-4">
+      <img src="https://tr.rbxcdn.com/your_game_icon.png" alt="Grow a Garden" class="w-24 h-24 rounded-md" />
+      <div>
+        <h1 class="text-3xl font-bold">Grow a Garden</h1>
+        <p class="text-gray-600">Von Splitting Point Studios</p>
+        <div class="mt-1 text-sm text-gray-500">2 Mio+ Spieler • Meist gespielt</div>
+      </div>
     </div>
-  </body>
+    <div class="flex space-x-3 mt-4 md:mt-0">
+      <button class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded">Spielen</button>
+      <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2 rounded">Favorit</button>
+      <button class="bg-gray-200 hover:bg-gray-300 text-gray-800 px-4 py-2 rounded">Teilen</button>
+    </div>
+  </header>
+
+  <!-- Slider / Galerie -->
+  <section class="bg-white my-6 p-4 shadow">
+    <div class="flex overflow-x-scroll space-x-4">
+      <!-- Platzhalter-Screenshots -->
+      <img src="https://tr.rbxcdn.com/screenshot1.png" alt="Screenshot 1" class="w-80 h-48 object-cover rounded" />
+      <img src="https://tr.rbxcdn.com/screenshot2.png" alt="Screenshot 2" class="w-80 h-48 object-cover rounded" />
+      <img src="https://tr.rbxcdn.com/screenshot3.png" alt="Screenshot 3" class="w-80 h-48 object-cover rounded" />
+    </div>
+  </section>
+
+  <!-- Game Info-Kacheln -->
+  <section class="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div class="bg-white p-4 rounded shadow text-center">
+      <div class="text-xl font-semibold">Genre</div>
+      <div class="text-gray-600">Sim & Abenteuer</div>
+    </div>
+    <div class="bg-white p-4 rounded shadow text-center">
+      <div class="text-xl font-semibold">Läuft seit</div>
+      <div class="text-gray-600">Mai 2025</div>
+    </div>
+    <div class="bg-white p-4 rounded shadow text-center">
+      <div class="text-xl font-semibold">Favoriten</div>
+      <div class="text-gray-600">✔️</div>
+    </div>
+    <div class="bg-white p-4 rounded shadow text-center">
+      <div class="text-xl font-semibold">Besuche</div>
+      <div class="text-gray-600">+2 Mio</div>
+    </div>
+  </section>
+
+  <!-- Tabs -->
+  <section class="container mx-auto bg-white my-6 p-4 rounded shadow">
+    <nav class="border-b border-gray-300 mb-4">
+      <ul class="flex space-x-4">
+        <li><a href="#" class="pb-2 text-blue-600 border-b-2 border-blue-600">About</a></li>
+        <li><a href="#" class="pb-2 text-gray-600 hover:text-gray-800">Server</a></li>
+        <li><a href="#" class="pb-2 text-gray-600 hover:text-gray-800">Socials</a></li>
+      </ul>
+    </nav>
+    <div id="tab-about">
+      <p class="text-gray-700">Grow a Garden ist ein beliebtes Roblox-Spiel, in dem du deinen eigenen Garten anbaust...</p>
+    </div>
+  </section>
+
+  <!-- Private Server Info -->
+  <section class="container mx-auto bg-white my-6 p-6 rounded shadow flex flex-col md:flex-row items-center justify-between">
+    <div>
+      <h2 class="text-2xl font-bold">Privater Server</h2>
+      <p class="mt-2 text-gray-700">Nutze diesen Link, um deinem privaten Server beizutreten:</p>
+      <code class="block bg-gray-100 p-2 mt-1 rounded">24285097817523155685561562675102</code>
+    </div>
+    <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded mt-4 md:mt-0">Server starten</button>
+  </section>
+
+</body>
 </html>
